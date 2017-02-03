@@ -1,0 +1,57 @@
+html {
+  height: 100%;
+  font-family: $font-family-regular;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: $bg-color;
+}
+body {
+  font-family: $font-family-regular;
+  font-size: 14px;
+  font-weight: 400;
+  height: 100%;
+  background-color: $bg-color;
+
+  &.no-scroll {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+}
+a {
+  @include transition(all .3s linear);
+}
+button,
+input,
+textarea,
+a {
+  outline: none !important;
+}
+.wrapper {
+  min-height: 100%;
+  background-color: $bg-color;
+}
+.relative {
+  position: relative;
+}
+.jspScrollable {
+  outline: none;
+  overflow: auto !important;
+}
+.jspPane {
+  width: 100% !important;
+}
+.jspContainer {
+}
+.jspVerticalBar {
+  width: 7px;
+  background: #f3f5f6;
+
+  .jspTrack {
+    background: #f3f5f6;
+  }
+  .jspDrag {
+    background: $second-color;
+  }
+}

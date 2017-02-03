@@ -1,0 +1,14 @@
+.icon {
+  @include transition(all .3s linear);
+
+  &-cross {
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    max-width: 26px;
+    max-height: 26px;
+    color: #fff;
+  }
+
+}

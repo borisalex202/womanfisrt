@@ -1,0 +1,27 @@
+{
+  "name": "womanfirst",
+  "authors": [
+    "Alexander Boris <index.wow202@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.1.*",
+    "html5shiv": "*",
+    "slick-carousel": "*",
+    "normalize.css": "*",
+    "bootstrap-sass": "3.*",
+    "jquery-form-styler": "1.7.6",
+    "jscrollpane": "2.0.*"
+  }
+}

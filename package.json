@@ -1,0 +1,30 @@
+{
+  "name": "womanfirst",
+  "version": "1.0.0",
+  "description": "Womanfirst project",
+  "main": "gulpfile.js",
+  "private": true,
+  "dependencies": {
+    "gulp": "*",
+    "require-dir": "*",
+    "gulp-uglify": "*",
+    "browser-sync": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-file-include": "*",
+    "gulp-imagemin": "*",
+    "imagemin-pngquant": "*",
+    "gulp-postcss": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-minify-css": "*",
+    "gulp-sass": "*",
+    "gulp-watch": "*",
+    "rimraf": "*",
+    "postcss-svg": "*",
+    "gulp-size": "*",
+    "gulp-svg-sprite": "*",
+    "gulp-svg2png": "*",
+    "gulp-util": "*"
+  },
+  "author": "Alexander Boris <index.wow202@gmail.com>",
+  "license": "ISC"
+}
