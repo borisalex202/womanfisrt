@@ -1,14 +1,78 @@
 .icon {
-  @include transition(all .3s linear);
+  @include transition(all .3s ease);
 
+  &-logo {
+    max-width: 142px;
+    max-height: 55px;
+
+    @media (max-width: $screen-sm-max) {
+      max-width: 200px;
+      max-height: 75px;
+    }
+    @media (max-width: 700px) {
+      max-width: 130px;
+      max-height: 45px;
+    }
+  }
+  &-menu {
+    display: none;
+    border: 0;
+    margin: 0 0 0 -1px;
+    background: #fff;
+    padding: 15px 18px;
+    border-right: 2px solid #eee;
+    @include transition(all .3s ease);
+
+    .icon-bar {
+      display: block;
+      background: #000;
+      width: 24px;
+      height: 2px;
+      @include transition(all .3s ease);
+
+      &:not(:last-child) {
+        margin-bottom: 6px;
+      }
+    }
+    &.active,
+    &:hover {
+      background: $second-color;
+
+      .icon-bar {
+        background: #fff;
+      }
+    }
+    @media (max-width: $screen-md-max) {
+      display: block;
+    }
+  }
   &-cross {
     cursor: pointer;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    max-width: 26px;
-    max-height: 26px;
-    color: #fff;
+    max-width: 40px;
+    max-height: 40px;
+    color: #000;
   }
+  &-arrow {
+    &-right {
+      max-width: 18px;
+      max-height: 12px;
+      color: #fff;
+    }
+  }
+  &-search {
+    max-width: 18px;
+    max-height: 18px;
+    color: #000;
+  }
+  &-play {
+    max-width: 86px;
+    max-height: 86px;
+    cursor: pointer;
 
+    &:hover {
+      margin: -6.5px -6.5px 0 0;
+      max-width: 99px;
+      max-height: 99px;
+    }
+  }
 }

@@ -1,0 +1,17 @@
+@@if ( context.main_menu === 'true') {
+            <div class="popup menu" id="main_menu">
+                <svg class="icon icon-cross popup-close"><use xlink:href="#icon-cross"></use></svg>
+                <div class="popup-body">
+                    @@include('_menu.html')
+                    <a href="#" class="btn btn-primary">Записаться на прием</a>
+                </div>
+            </div>
+}
+@@if ( context.search === 'true') {
+            <div class="popup search" id="search">
+                <svg class="icon icon-cross popup-close"><use xlink:href="#icon-cross"></use></svg>
+                <div class="popup-body">
+                    <input type="search" placeholder="Что хотите найти?">
+                </div>
+            </div>
+}

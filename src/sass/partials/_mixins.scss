@@ -402,3 +402,10 @@
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'blur\'><feGaussianBlur stdDeviation=\'#{$px}\' /></filter></svg>#blur");
     filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='#{$px}');
 }
+
+@mixin placeholder {
+	&::-webkit-input-placeholder {@content;}
+	&:-moz-placeholder           {@content;}
+	&::-moz-placeholder          {@content;}
+	&:-ms-input-placeholder      {@content;}
+}

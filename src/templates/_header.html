@@ -1,5 +1,34 @@
-            <header class="site-header">
-                <div class="container">
-
+<header class="site-header">
+    <div class="site-header-top">
+        <div class="logo">
+            <a href="index.html">
+                <svg class="icon icon-logo"><use xlink:href="#icon-logo"></use></svg>
+            </a>
+        </div>
+        <div class="logo-slogan">
+            Не бойтесь знать <br>Спешите действовать
+        </div>
+        <a href="#" class="btn btn-primary go">
+            Пройти обследование
+            <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
+        </a>
+    </div>
+    <div class="site-header-bottom">
+        @@include('./_menu.html')
+        <div class="search-block">
+            <form action="" class="flex">
+                <button type="submit" class="search-icon" data-toggle="#search">
+                    <svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg>
+                </button>
+                <div class="search-input">
+                    <input type="search" class="search-field" placeholder="Что хотите найти?">
                 </div>
-            </header>
+            </form>
+        </div>
+        <button class="icon icon-menu" data-toggle="#main_menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+</header>

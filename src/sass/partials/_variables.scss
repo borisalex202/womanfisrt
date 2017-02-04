@@ -1,3 +1,6 @@
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_mixins";
+
 /* Fonts */
 $font-family-regular:           'ProximaNovaRegular', sans-serif;
 $font-family-bold:              'ProximaNovaBold', sans-serif;
@@ -5,11 +8,12 @@ $font-family-bold:              'ProximaNovaBold', sans-serif;
 /* Main */
 $bg-color:                       #f6f6f6;
 
-$main-color:                     #990F45;
-$second-color:                   #B81152;
+$main-color:                     #B81152;
+$second-color:                   #990F45;
 
 $text-color:                     #000;
 $head-color:                     #444;
+$border-color:                   #B6B6B6;
 $link-color:                     #000;
 $link-hover-color:               #9f1050;
 $link-hover-color-item:          #ee3b37;
@@ -19,17 +23,26 @@ $link-hover-decoration:          underline;
 $btn-font-weight:                normal;
 
 $btn-default-color:              #000;
+$btn-default-color-hover:        #fff;
 $btn-default-bg:                 #fff;
 $btn-default-bg-hover:           #B81152;
 $btn-default-bg-active:          darken($btn-default-bg-hover, 10%);
 $btn-default-border:             #B81152;
 
-$btn-danger-color:              #fff;
-$btn-danger-bg:                 #ee3b37;
-$btn-danger-bg-hover:           #d60f0f;
-$btn-danger-bg-active:          #c20e0e;
-$btn-danger-border:             #ee3b37;
-
 $btn-primary-color:              #fff;
-$btn-primary-bg:                 transparent;
-$btn-primary-border:             #fff;
+$btn-primary-color-hover:        #fff;
+$btn-primary-bg:                 $main-color;
+$btn-primary-bg-hover:           $second-color;
+$btn-primary-bg-active:          darken($btn-default-bg-hover, 10%);
+$btn-primary-border:             $main-color;
+
+/* Bootstrap settings */
+
+$container-tablet:             (720px + $grid-gutter-width) !default;
+$container-sm:                 $container-tablet !default;
+
+$container-desktop:            (940px + $grid-gutter-width) !default;
+$container-md:                 $container-desktop !default;
+
+$container-large-desktop:      (1410px + $grid-gutter-width);
+$container-lg:                 $container-large-desktop;
