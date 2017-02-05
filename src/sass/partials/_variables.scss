@@ -4,6 +4,7 @@
 /* Fonts */
 $font-family-regular:           'ProximaNovaRegular', sans-serif;
 $font-family-bold:              'ProximaNovaBold', sans-serif;
+$font-family-black:             'ProximaNovaBlack', sans-serif;
 
 /* Main */
 $bg-color:                       #f6f6f6;
@@ -46,3 +47,9 @@ $container-md:                 $container-desktop !default;
 
 $container-large-desktop:      (1410px + $grid-gutter-width);
 $container-lg:                 $container-large-desktop;
+
+// Articles
+$article-colors: (
+  white   : #fff,
+  gray    : #E8E8E8
+);

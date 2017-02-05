@@ -1,0 +1,319 @@
+.article {
+  &s {
+    position: relative;
+    margin-top: -115px;
+
+    &-left {
+      padding-right: 0;
+    }
+    &-right {
+      padding-left: 0;
+
+      &.indent {
+        position: relative;
+        top: 115px;
+      }
+    }
+  }
+  &-container {
+    @include flexbox();
+    @include flex-wrap(wrap)
+  }
+  &-block {
+    padding: 35px 40px 30px;
+    height: 360px;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include align-items(center);
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      width: 64px;
+      height: 2px;
+      background: $second-color;
+    }
+    &:hover {
+      cursor: pointer;
+      text-decoration: none;
+      @include box-shadow(0 0 30px 0 rgba(0,0,0,.35));
+      z-index: 9;
+    }
+    &.large {
+      height: 720px;
+      padding: 40px;
+      cursor: pointer;
+      overflow: hidden;
+
+      &:hover {
+        @include box-shadow(none);
+
+        .thumbnail {
+          @include scale(1.1,1.1);
+        }
+        .read-more {
+          &:after {
+            width: 18px;
+            margin-left: 20px;
+            @include opacity(1);
+          }
+        }
+      }
+      &:after {
+        display: none;
+      }
+      .thumbnail {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: cover !important;
+        @include scale(1,1);
+        @include transition(all .3s linear);
+      }
+      .icon {
+        color: #fff;
+      }
+      .read-more {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        font-family: $font-family-bold;
+        font-size: 13px;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 5px;
+        border-bottom: 2px solid $second-color;
+
+        &:after {
+          content: '';
+          display: inline-block;
+          background: url('../img/svg/arrow-right.svg') no-repeat;
+          width: 0px;
+          height: 12px;
+          margin-left: 0px;
+          overflow: hidden;
+          @include transition(all .3s ease);
+          @include opacity(0);
+        }
+      }
+      .title {
+        position: absolute;
+        bottom: 95px;
+        left: 40px;
+        max-width: 80%;
+        font-family: $font-family-bold;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 1.2px;
+        color: #fff;
+      }
+    }
+    &.full {
+      .title {
+        margin: 0;
+      }
+    }
+    .description {
+      color: #898989;
+      font-size: 18px;
+      line-height: 24px;
+      margin: 0 0 55px 0;
+    }
+    .icon {
+      margin: 0 0 auto 0;
+    }
+    .title {
+      font-family: $font-family-black;
+      font-size: 24px;
+      line-height: 32px;
+      color: #000;
+      text-transform: uppercase;
+      margin: 0 0 auto 0;
+
+      &.sm {
+        font-family: $font-family-bold;
+        font-size: 22px;
+        line-height: 26px;
+        text-transform: inherit;
+      }
+    }
+    @each $article, $color in $article-colors {
+      &.#{$article} {
+        background: $color;
+      }
+    }
+  }
+  &-question {
+    padding: 30px 40px;
+    height: 360px;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+
+    .question {
+      position: absolute;
+      top: 30px;
+      bottom: 40px;
+      right: 40px;
+      left: 40px;
+      pointer-events: none;
+      @include flexbox();
+      @include flex-wrap(wrap);
+      @include align-items(center);
+      @include transition(all .5s ease);
+      @include opacity(0);
+
+      &.active {
+        pointer-events: all;
+        @include opacity(1);
+      }
+      &.total {
+        .title {
+          max-width: 100%;
+        }
+      }
+    }
+    .title {
+      font-family: $font-family-black;
+      font-size: 36px;
+      line-height: 40px;
+      color: #000;
+      text-transform: uppercase;
+      max-width: 85%;
+      margin-top: -7px;
+    }
+    .answer {
+      width: 100%;
+    }
+    .btn {
+      width: 71%;
+      padding-top: 14px;
+      padding-bottom: 12px;
+      font-family: $font-family-bold;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      margin: auto 0 0 0;
+    }
+  }
+  @media (max-width: 1365px) {
+    &s {
+      margin-top: -80px;
+
+      &-right {
+        padding-left: 0;
+
+        &.indent {
+          top: 80px;
+        }
+      }
+    }
+    &-block {
+      height: 256px;
+      padding: 30px;
+
+      &:after {
+        bottom: 30px;
+        left: 30px;
+        width: 52px;
+        height: 2px;
+      }
+      &.large {
+        height: 512px;
+        padding: 30px;
+
+        .title {
+          font-size: 24px;
+          line-height: 26px;
+          bottom: 75px;
+          left: 30px;
+        }
+        .read-more {
+          left: 30px;
+          bottom: 30px;
+          letter-spacing: 2.7px;
+        }
+      }
+      .icon {
+        max-width: 52px;
+        max-height: 47px;
+      }
+      .description {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0 0 30px 0;
+      }
+      .title {
+        font-size: 16px;
+        line-height: 22px;
+
+        &.sm {
+          font-size: 18px;
+          line-height: 18px;
+        }
+      }
+    }
+    &-question {
+      padding: 30px;
+      height: 256px;
+
+      .title {
+        font-size: 24px;
+        line-height: 28px;
+      }
+      .btn {
+        max-width: 82%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 10px;
+      }
+      .question {
+        top: 30px;
+        bottom: 30px;
+        right: 32px;
+        left: 32px;
+      }
+    }
+  }
+  @media (max-width: $screen-sm-max) {
+    &s {
+      margin-top: 0;
+
+      &-left {
+        padding-right: 15px;
+      }
+      &-right {
+        padding-left: 15px;
+        @include inline-flex();
+        @include flex-direction(row-reverse);
+        @include flex-wrap(wrap-reverse);
+
+
+        &.indent {
+          position: relative;
+          top: 0;
+        }
+      }
+    }
+    &-container {
+      width: 100%;
+    }
+    &-block {
+      height: 375px;
+    }
+    &-question {
+      height: 375px;
+    }
+  }
+}

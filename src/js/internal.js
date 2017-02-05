@@ -7,8 +7,10 @@
         popup: $('.popup')
         },
         options = {
-            widthScroll: scrollbarWidth()
-        };
+            widthScroll: scrollbarWidth(),
+            headerHeightFixed: elements.headerFixed.height()
+        },
+        answer = {};
 
     $(window).scroll(function () {
         var headerHeight = elements.header.height();
@@ -78,6 +80,28 @@
         if($(document).width() >= 1200 && $(document).width() <= 1439) {
             var widthRow = $('.site-header-fixed .row').width();
             $('.site-header-fixed .search-input').width(widthRow - 289);
+        }
+    });
+
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top - options.headerHeightFixed
+                }, 700);
+                return false;
+            }
+        }
+    });
+
+    $('.get-answer').on('click', function () {
+        var questionNumber = $(this).closest('.question').data('question');
+        answer[questionNumber] = $(this).closest('.question').find('input:checked').val();
+        console.log(answer);
+        if($(this).closest('.question').find('input').is(':checked') && !$(this).closest('.question').is(':last-child')) {
+            $(this).closest('.question').removeClass('active').next().addClass('active');
         }
     });
 

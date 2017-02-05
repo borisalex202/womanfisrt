@@ -75,4 +75,28 @@
       max-height: 99px;
     }
   }
+  &-mouse {
+    max-width: 24px;
+    max-height: 53px;
+  }
+  &-m-calendar {
+    max-width: 64px;
+    max-height: 58px;
+    color: $second-color;
+  }
+  &-doc-pen {
+    max-width: 50px;
+    max-height: 57px;
+    color: $second-color;
+  }
+  &-book-bulb {
+    max-width: 64px;
+    max-height: 58px;
+    color: $second-color;
+  }
+  &-message {
+    max-width: 64px;
+    max-height: 52px;
+    color: $second-color;
+  }
 }
