@@ -9,6 +9,7 @@
     background-color: $btn-default-bg;
     border: 2px solid $btn-default-border;
     border-radius: 0;
+    text-transform: uppercase;
     @include box-shadow(none !important);
 
     &:hover,

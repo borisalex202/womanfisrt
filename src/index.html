@@ -27,11 +27,11 @@
                                 </a>
                                 <p class="title">не бойтесь знать <span>спешите действовать !</span></p>
                                 <p class="description">Часто в предклимактерический период женщины не могут понять, что происходит с их организмом. </p>
-                                <p>С приходом климакса происходит гормональный спад, вслед за которым часто появляются разнообразные проблемы: с кожей и волосами, лишним весом,
+                                <p class="desc">С приходом климакса происходит гормональный спад, вслед за которым часто появляются разнообразные проблемы: с кожей и волосами, лишним весом,
                                     приливами, раздражительностью. Кроме того, могут возникнуть сердечно-сосудистые проблемы, диабет,
                                     а в последующем – остеопороз, болезнь Альцгеймера
                                     и другие серьезные заболевания.</p>
-                                <p>Часто женщины не сопоставляют возникающие болезни
+                                <p class="desc">Часто женщины не сопоставляют возникающие болезни
                                     и наступление климакса, а связь эта уже доказана наукой. Мало снять несколько симптомов, гораздо эффективнее воздействовать на основную причину.</p>
                             </div>
                             <div class="article-container">
@@ -180,6 +180,95 @@
                     </a>
                     <div class="clearfix"></div>
                 </div>
+                <div class="map-block">
+                    <div class="map-filter">
+                        <div class="row">
+                            <div class="map-filter-top">
+                                <div class="col-md-9 col-xs-12">
+                                    <p class="title">Здесь вам помогут</p>
+                                    <p class="description">Найдите ближайшую клинику или медицинский центр. <br>Профессиональные врачи и консультанты окажут необходимую помощь!</p>
+                                </div>
+                                <div class="col-md-3 hidden-xs hidden-sm">
+                                    <button class="btn btn-default">Записаться на прием</button>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-12">
+                                <select class="js-select change" data-search="true" data-visible-options="10" data-placeholder="Выберите город">
+                                    <option></option>
+                                    <option>Москва</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Волгоград</option>
+                                    <option>Екатеринбург</option>
+                                    <option>Казань</option>
+                                    <option>Краснодар</option>
+                                    <option>Нижний Новгород</option>
+                                    <option>Новосибирск</option>
+                                    <option>Омск</option>
+                                    <option>Пермь</option>
+                                    <option>Ростов-на-Дону</option>
+                                    <option>Самара</option>
+                                    <option>Уфа</option>
+                                    <option>Челябинск</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 col-xs-12">
+                                <select class="js-select change" data-search="true" data-visible-options="10" data-placeholder="Выберите станцию метро">
+                                    <option></option>
+                                    <option>Москва</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Волгоград</option>
+                                    <option>Екатеринбург</option>
+                                    <option>Казань</option>
+                                    <option>Краснодар</option>
+                                    <option>Нижний Новгород</option>
+                                    <option>Новосибирск</option>
+                                    <option>Омск</option>
+                                    <option>Пермь</option>
+                                    <option>Ростов-на-Дону</option>
+                                    <option>Самара</option>
+                                    <option>Уфа</option>
+                                    <option>Челябинск</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 col-xs-12">
+                                <select class="js-select change" data-search="true" data-visible-options="10" data-placeholder="Выберите клинику">
+                                    <option></option>
+                                    <option>Москва</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Волгоград</option>
+                                    <option>Екатеринбург</option>
+                                    <option>Казань</option>
+                                    <option>Краснодар</option>
+                                    <option>Нижний Новгород</option>
+                                    <option>Новосибирск</option>
+                                    <option>Омск</option>
+                                    <option>Пермь</option>
+                                    <option>Ростов-на-Дону</option>
+                                    <option>Самара</option>
+                                    <option>Уфа</option>
+                                    <option>Челябинск</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 col-xs-12">
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span class="icn"></span>
+                                    <span class="text">Государственные клиники</span>
+                                </label>
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span class="icn"></span>
+                                    <span class="text">Частные клиники</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-area">
+                        <div id="map"></div>
+                    </div>
+                </div>
+                @@include('templates/_footer.html')
             </div>
-@@include('templates/_footer.html')
-@@include('templates/_end.html')
+@@include('templates/_end.html', {
+"google_map": "true"
+})

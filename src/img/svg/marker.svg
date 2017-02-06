@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" width="35" height="59" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 74.2 99" enable-background="new 0 0 74.2 99" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="74.2" height="99"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" fill="#9F1050" d="M37.1,0C15.8,0,0,18.7,0,40.2C0,67.6,37.1,99,37.1,99s37.1-31.4,37.1-58.8
+		C74.2,19,58.3,0,37.1,0"/>
+	<path clip-path="url(#SVGID_2_)" fill="#FFFFFF" d="M65.4,37.1c0,15.7-12.7,28.3-28.3,28.3c-15.7,0-28.3-12.7-28.3-28.3
+		S21.4,8.7,37.1,8.7C52.7,8.7,65.4,21.4,65.4,37.1"/>
+	<path clip-path="url(#SVGID_2_)" fill="#9F1050" d="M49.1,55h-24c-2.6,0-4.7-2.1-4.7-4.7V30.3c0-2.6,2.1-4.7,4.7-4.7h24
+		c2.6,0,4.7,2.1,4.7,4.7v19.9C53.8,52.9,51.7,55,49.1,55"/>
+	<polygon clip-path="url(#SVGID_2_)" fill="#9F1050" points="37.1,13.9 14.4,31.2 59.8,31.2 	"/>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="37.1" y1="31.2" x2="37.1" y2="45.4"/>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-miterlimit="10" x1="44.2" y1="38.3" x2="30.1" y2="38.3"/>
+</g>
+</svg>

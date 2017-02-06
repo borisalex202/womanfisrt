@@ -1,0 +1,109 @@
+.map {
+  &-filter {
+    padding: 30px 40px;
+
+    &-top {
+      margin-bottom: 35px;
+      @include flexbox();
+      @include flex-wrap(wrap);
+      @include align-items(flex-end);
+    }
+    .title {
+      font-family: $font-family-black;
+      font-size: 36px;
+      line-height: 40px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .description {
+      font-size: 18px;
+      line-height: 24px;
+      color: #898989;
+      margin: 0;
+    }
+    .btn {
+      font-family: $font-family-bold;
+      font-size: 14px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      letter-spacing: 1.3px;
+      width: 100%;
+      max-width: 89%;
+      float: right;
+      margin-bottom: 10px;
+    }
+  }
+  &-area {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      z-index: 80;
+      @include box-shadow(0 0 20px 10px rgba(0,0,0,.3));
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      z-index: 80;
+      @include box-shadow(0 0 20px 10px rgba(0,0,0,.3));
+    }
+  }
+  @media (max-width: $screen-md-max) {
+    &-filter {
+      padding: 25px 30px;
+
+      &-top {
+        margin-bottom: 25px;
+      }
+      .title {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 15px;
+      }
+      .description {
+        font-size: 14px;
+        line-height: 18px;
+        color: #898989;
+        margin: 0;
+      }
+      .btn {
+        font-size: 12px;
+        padding: 13px 5px;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  @media (max-width: $screen-sm-max) {
+    &-filter {
+      padding: 40px;
+
+      &-top {
+        margin-bottom: 35px;
+      }
+      .title {
+        font-size: 36px;
+        line-height: 26px;
+        margin-bottom: 35px;
+      }
+      .description {
+        font-size: 26px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+#map {
+  width: 100%;
+  height: 465px;
+}

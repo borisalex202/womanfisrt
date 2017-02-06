@@ -12,6 +12,7 @@
         },
         answer = {};
 
+    @@include('./partials/_map.js')
     $(window).scroll(function () {
         var headerHeight = elements.header.height();
 
@@ -105,6 +106,35 @@
         if($(this).closest('.question').find('input').is(':checked') && !$(this).closest('.question').is(':last-child')) {
             $(this).closest('.question').removeClass('active').next().addClass('active');
         }
+    });
+
+    $('.js-select').each(function(){
+        var flag = 0,
+            optionHeight = 0;
+
+        $(this).styler({
+            onSelectOpened: function(){
+                var list = $(this).find('.jq-selectbox__dropdown ul'),
+                    jspContainer = $(this).find('.jspContainer'),
+                    jsSelect = $(this).closest('.js-select'),
+                    dropdown = jsSelect.find('.jq-selectbox__dropdown'),
+                    dropdownHeight = dropdown.height();
+
+                if(flag==0) {
+                    jsSelect.data('option', dropdownHeight)
+                    optionHeight = jsSelect.data('option');
+                }
+                flag = 1;
+
+                jspContainer.height(optionHeight);
+                list.jScrollPane();
+            },
+            onSelectClosed: function() {
+                var list = $(this).find('.jq-selectbox__dropdown ul');
+
+                list.jScrollPane('destroy');
+            }
+        });
     });
 
     function scrollbarWidth() {
