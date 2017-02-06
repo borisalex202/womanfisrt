@@ -41,7 +41,7 @@ a {
     @include box-shadow(0 0 100px 0 rgba(0,0,0,.35));
 
     @media (max-width: $screen-sm-max) {
-      padding-top: 100px;
+      padding-top: 120px;
     }
     @media (max-width: 700px) {
       padding-top: 70px;
@@ -146,6 +146,25 @@ a {
     .text {
       font-size: 13px;
       line-height: 18px;
+    }
+  }
+  @media (max-width: $screen-sm-max) {
+    margin-bottom: 20px;
+
+    .icn {
+      width: 30px;
+      height: 30px;
+
+      &:after {
+        top: 5px;
+        left: 5px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .text {
+      font-size: 22px;
+      line-height: 24px;
     }
   }
 }

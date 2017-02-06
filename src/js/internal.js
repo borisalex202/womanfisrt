@@ -28,7 +28,10 @@
         } else {
             $('.site-header-fixed .search-input').attr('style', '');
         }
+
+        calcHeaderHeight();
     });
+    calcHeaderHeight();
 
     $(document).mouseup(function (e){
         var el = $('.icon-menu, .main-menu');
@@ -99,7 +102,6 @@
     $('.get-answer').on('click', function () {
         var questionNumber = $(this).closest('.question').data('question');
         answer[questionNumber] = $(this).closest('.question').find('input:checked').val();
-        console.log(answer);
         if($(this).closest('.question').find('input').is(':checked') && !$(this).closest('.question').is(':last-child')) {
             $(this).closest('.question').removeClass('active').next().addClass('active');
         }
@@ -110,6 +112,16 @@
         var windowsWidth = parseInt(window.innerWidth);
         var scrollbarWidth = windowsWidth - documentWidth;
         return scrollbarWidth;
+    }
+
+    function calcHeaderHeight() {
+        if($(document).width() >= 992) {
+            options.headerHeightFixed = elements.headerFixed.height()
+        } else if($(document).width() >= 701 && $(document).width() <= 991) {
+            options.headerHeightFixed = elements.header.height();
+        } else if ($(document).width() <= 700) {
+            options.headerHeightFixed = elements.header.height();
+        }
     }
 
 })(jQuery);

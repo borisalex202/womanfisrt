@@ -627,7 +627,8 @@
     background: #fff;
     margin-top: 80px;
   }
-  .icon-mouse {
+  .icon-mouse,
+  .icon-arrow-down {
     position: absolute;
     top: 30px;
     right: 40px;
@@ -701,6 +702,44 @@
 
         &:not(:last-child) {
           margin-bottom: 25px;
+        }
+      }
+    }
+  }
+  @media (max-width: $screen-sm-max) {
+    padding: 40px;
+    height: auto;
+
+    &:after {
+      max-width: 140px;
+    }
+    .title {
+      font-size: 48px;
+      line-height: 42px;
+      margin-bottom: 45px;
+
+      span {
+        font-size: 36px;
+        line-height: 42px;
+      }
+    }
+    .icon-mouse,
+    .icon-arrow-down {
+      top: 40px;
+      right: 55px;
+    }
+    .description {
+      font-size: 28px;
+      line-height: 38px;
+      padding-right: 100px;
+    }
+    p {
+      &:not(.description, .title) {
+        font-size: 28px;
+        line-height: 36px;
+
+        &:not(:last-child) {
+          margin-bottom: 40px;
         }
       }
     }
