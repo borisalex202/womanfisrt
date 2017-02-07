@@ -64,6 +64,31 @@
   &-description {
     padding: 30px 0 30px 25px;
 
+    &-area {
+      > div {
+        &:nth-of-type(1) {
+          > div:nth-of-type(2) {
+            background: #fff !important;
+            @include box-shadow(0 0 30px 0 rgba(0,0,0,.25) !important);
+          }
+        }
+        &:nth-of-type(3) {
+          background: url('../img/svg/cross-red.svg') no-repeat;
+          background-size: cover;
+          top: 20px !important;
+          right: 15px !important;
+
+          img {
+            display: none !important;
+          }
+        }
+      }
+      .gm-style-iw {
+        > div {
+          max-height: none !important;
+        }
+      }
+    }
     .title {
       font-family: $font-family-black;
       font-size: 24px;

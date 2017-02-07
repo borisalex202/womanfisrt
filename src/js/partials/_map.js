@@ -166,7 +166,9 @@ function initMap() {
                     '<div class="attribute-row"><span class="attribute-name">Время работы:</span><span class="attribute-val">' + (data.days ? data.days + '<br>': '')  + (data.times ? data.times : '') + (!data.days && !data.times ? '-' : '') + '</span></div>' +
                     '<div class="attribute-row"><span class="attribute-name">Интернет-сайт:</span><span class="attribute-val">' + (data.site ? '<a href="' + data.site + '" target="_blank">' + data.site + '</a>' : '-') + '</span></div>' +
                     '</div>');
+
                 infoWindow.open(map, marker);
+                $('.map-description').closest('.gm-style-iw').parent().addClass('map-description-area');
             });
         })(marker, data);
     }
