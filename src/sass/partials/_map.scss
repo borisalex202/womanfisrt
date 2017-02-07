@@ -61,6 +61,49 @@
   &-button {
     display: none;
   }
+  &-description {
+    padding: 30px 0 30px 25px;
+
+    .title {
+      font-family: $font-family-black;
+      font-size: 24px;
+      text-transform: uppercase;
+      margin: 0 0 20px;
+    }
+    .description {
+      font-size: 14px;
+      line-height: 18px;
+      color: #898989;
+      padding-bottom: 25px;
+      margin-bottom: 25px;
+      border-bottom: 2px solid #eee;
+    }
+    .attribute {
+      &-row {
+        display: block;
+        margin-bottom: 10px;
+      }
+      &-name {
+        display: inline-block;
+        vertical-align: middle;
+        font-family: $font-family-regular;
+        font-size: 14px;
+        width: 120px;
+        color: #898989;
+      }
+      &-val {
+        display: inline-block;
+        vertical-align: middle;
+        font-family: $font-family-regular;
+        font-size: 14px;
+        color: #000;
+      }
+    }
+    a {
+      text-decoration: underline;
+      color: $second-color;
+    }
+  }
   @media (max-width: $screen-md-max) {
     &-filter {
       padding: 25px 30px;
