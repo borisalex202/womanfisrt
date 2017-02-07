@@ -479,16 +479,6 @@
       margin-top: 10px;
       color: #b5b5b5;
     }
-    .copyright {
-      img {
-        margin-bottom: 30px;
-      }
-      p {
-        font-size: 14px;
-        line-height: 18px;
-        color: #b5b5b5;
-      }
-    }
     ul {
       list-style: none;
       padding: 0;
@@ -510,11 +500,71 @@
         }
       }
     }
+    .copyright {
+      img {
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 18px;
+        color: #b5b5b5;
+      }
+    }
     .contraindications {
       margin-top: 15px;
       padding-top: 25px;
       max-height: 85px;
       border-top: 2px solid #eee;
+    }
+    @media (max-width: $screen-sm-max) {
+      &-info {
+        font-size: 26px;
+        line-height: 32px;
+      }
+      ul {
+        li {
+          margin-bottom: 0;
+
+          a {
+            display: block;
+            text-decoration: none;
+            font-size: 26px;
+            padding: 35px 0;
+            border-top: 2px solid #eee;
+            background: url('../img/svg/arrow-mini-right.svg') right center no-repeat;
+            background-size: 17px 23px;
+
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      .flex {
+        @include flexbox();
+        @include flex-wrap(wrap);
+        @include flex-direction(row-reverse);
+        @include flex-wrap(wrap-reverse);
+      }
+      .copyright {
+        img {
+          width: 100%;
+          max-width: 270px;
+        }
+        p {
+          font-size: 26px;
+          line-height: 32px;
+        }
+      }
+      .b-line {
+        ul {
+          border-bottom: 2px solid #eee;
+          margin-bottom: 35px;
+        }
+      }
+      .contraindications {
+        max-height: 155px;
+      }
     }
   }
 }
