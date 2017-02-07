@@ -394,9 +394,70 @@
   @media (max-width: 700px) {
     &-block {
       width: 100%;
+      padding: 20px;
+
+      &:after {
+        bottom: 20px;
+        left: 20px;
+      }
+      &.large {
+        padding: 20px;
+
+        .title {
+          bottom: 65px;
+          left: 20px;
+          right: 20px;
+          font-size: 26px;
+          line-height: 30px;
+        }
+        .read-more {
+          bottom: 20px;
+          left: 20px;
+          font-size: 14px;
+          line-height: 25px;
+        }
+      }
+      .icon {
+        max-width: 50px;
+        max-height: 50px;
+      }
+      .title {
+        font-size: 20px;
+        line-height: 28px;
+
+        &.sm {
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+      .description {
+        font-size: 16px;
+        line-height: 18px;
+      }
     }
     &-question {
       width: 100%;
+      padding: 20px;
+
+      .question {
+        position: absolute;
+        top: 20px;
+        bottom: 20px;
+        right: 20px;
+        left: 20px;
+
+        .title {
+          font-size: 26px;
+          line-height: 28px;
+        }
+        .btn {
+          font-size: 16px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          width: 100%;
+          max-width: 100%;
+        }
+      }
     }
   }
 }

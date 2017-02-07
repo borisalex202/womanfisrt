@@ -566,6 +566,37 @@
         max-height: 155px;
       }
     }
+    @media (max-width: 700px) {
+      padding: 20px 20px 15px 20px;
+
+      &-info {
+        font-size: 16px;
+        line-height: 18px;
+      }
+      ul {
+        li {
+          a {
+            font-size: 16px;
+            padding: 25px 0;
+          }
+        }
+      }
+      .copyright {
+        img {
+          width: auto;
+        }
+        p {
+          font-size: 16px;
+          line-height: 18px;
+        }
+      }
+    }
+    @media (max-width: 500px) {
+      .contraindications {
+        padding-top: 0;
+        max-height: 110px;
+      }
+    }
   }
 }
 .container {
@@ -830,6 +861,40 @@
 
       &:not(:last-child) {
         margin-bottom: 40px;
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    padding: 20px;
+
+    .title {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 30px;
+
+      span {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+    .icon-arrow-down {
+      top: 20px;
+      right: 30px;
+      max-width: 28px;
+      max-height: 51px
+    }
+    .description {
+      font-size: 18px;
+      line-height: 20px;
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+    .desc {
+      font-size: 14px;
+      line-height: 16px;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
       }
     }
   }
