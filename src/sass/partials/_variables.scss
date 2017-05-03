@@ -59,3 +59,46 @@ $materials-colors: (
   maroon   : #B91152,
   burgundy : #990E43
 );
+
+
+
+// Theme 'Pink'
+
+  $main-color-pink:                #E693B8;
+  $second-color-pink:              #D5719C;
+
+  $btn-default-border-pink:        $main-color-pink;
+  $btn-default-bg-pink:            #fff;
+  $btn-default-bg-hover-pink:      $second-color-pink;
+  $btn-default-bg-active-pink:     darken($btn-default-bg-hover-pink, 10%);
+
+  $btn-primary-border-pink:        $main-color-pink;
+  $btn-primary-bg-pink:            $main-color-pink;
+  $btn-primary-bg-hover-pink:      $second-color-pink;
+  $btn-primary-bg-active-pink:     darken($btn-primary-bg-hover-pink, 10%);
+
+  $materials-colors-pink: (
+          maroon   : #E593B8,
+          burgundy : #DA7DA6
+  );
+
+
+// Theme 'Purple'
+
+  $main-color-purple:              #8E5AA2;
+  $second-color-purple:            #6A3D7B;
+
+  $btn-default-border-purple:      $main-color-purple;
+  $btn-default-bg-purple:          #fff;
+  $btn-default-bg-hover-purple:    $second-color-purple;
+  $btn-default-bg-active-purple:   darken($btn-default-bg-hover-purple, 10%);
+
+  $btn-primary-border-purple:      $main-color-purple;
+  $btn-primary-bg-purple:          $main-color-purple;
+  $btn-primary-bg-hover-purple:    $second-color-purple;
+  $btn-primary-bg-active-purple:   darken($btn-primary-bg-hover-purple, 10%);
+
+  $materials-colors-purple: (
+          maroon   : #8D59A1,
+          burgundy : #7F4F90
+  );

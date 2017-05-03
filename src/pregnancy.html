@@ -1,5 +1,6 @@
 @@include('templates/_head.html', {
-  "title": "Women First"
+  "title": "Women First",
+  "theme": "purple"
 })
 @@include('templates/_modals.html', {
 "main_menu": "true",
@@ -8,13 +9,12 @@
 @@include('templates/_header_top.html')
             <div class="wrapper-container">
                 @@include('templates/_header.html')
-                <div class="main_banner add_mobile">
-                    <img src="img/img1.jpg" class="hidden-xs hidden-sm" alt="">
-                    <img src="img/img1-sm.jpg" class="hidden-md hidden-lg" alt="">
+                <div class="main_banner add_mobile pregnancy">
+                    <img src="img/img3.jpg" class="hidden-xs hidden-sm" alt="">
+                    <img src="img/img3-sm.jpg" class="hidden-md hidden-lg" alt="">
                     <div class="container">
-                        <p class="title">Климакс</p>
-                        <p class="description"><span>лишает вас</span><span>красоты?</span></p>
-                        <svg class="icon icon-play"><use xlink:href="#icon-play"></use></svg>
+                        <p class="title">всё,</p>
+                        <p class="description"><span>что должна знать</span><span>будущая мама</span></p>
                     </div>
                 </div>
                 <div class="articles">
@@ -26,99 +26,38 @@
                                     <svg class="icon icon-arrow-down hidden-md hidden-lg"><use xlink:href="#icon-arrow-down"></use></svg>
                                 </a>
                                 <p class="title">не бойтесь знать <span>спешите действовать !</span></p>
-                                <p class="description">Часто в предклимактерический период женщины не могут понять, что происходит с их организмом. </p>
-                                <p class="desc">С приходом климакса происходит гормональный спад, вслед за которым часто появляются разнообразные проблемы: с кожей и волосами, лишним весом,
-                                    приливами, раздражительностью. Кроме того, могут возникнуть сердечно-сосудистые проблемы, диабет,
-                                    а в последующем – остеопороз, болезнь Альцгеймера
-                                    и другие серьезные заболевания.</p>
-                                <p class="desc">Часто женщины не сопоставляют возникающие болезни
-                                    и наступление климакса, а связь эта уже доказана наукой. Мало снять несколько симптомов, гораздо эффективнее воздействовать на основную причину.</p>
+                                <p class="description">Каждая женщина хочет стать мамой, и, конечно, мамой здорового малыша.</p>
+                                <p class="desc">Беременность не только самый счастливый, но и самый ответственный период в жизни женщины. Он связан
+                                    с массой положительных эмоций, мечтаний и надежд,
+                                    а также с некоторыми опасениями и страхами. В этом нет ничего необычного, любые изменения в жизни всегда несут с собой некую неопределенность, а это может вызывать и некоторую тревожность.</p>
+                                <p class="desc">Главное во время беременности — знать, как надо себя вести, что можно, что нельзя, а что необходимо делать, чтобы беременность и последующие роды прошли максимально гладко. </p>
                             </div>
                             <div class="article-container">
-                                <a href="#" class="col-xs-6 article-block gray">
+                                <a href="https://womenfirst.ru/servisy/beremennost/pregnancy-calc/" class="col-xs-6 article-block gray">
                                     <svg class="icon icon-m-calendar"><use xlink:href="#icon-m-calendar"></use></svg>
-                                    <p class="title">составьте менструальный календарь</p>
+                                    <p class="title">Калькулятор набора веса при беременности</p>
                                 </a>
-                                <a href="#" class="col-xs-6 article-block white">
+                                <a href="https://womenfirst.ru/servisy/beremennost/planirovanie-pola-rebenka/" class="col-xs-6 article-block white">
                                     <svg class="icon icon-doc-pen"><use xlink:href="#icon-doc-pen"></use></svg>
-                                    <p class="title">Определение биологического возраста</p>
+                                    <p class="title">Тест на определение пола ребенка</p>
                                 </a>
                             </div>
                         </div>
                         <div id="articles" class="col-md-6 col-xs-12 articles-right indent">
                             <div class="article-container">
-                                <div class="col-xs-6 article-question">
-                                    <div class="question active" data-question="1">
-                                        <p class="title">Вы старше 35 лет?</p>
-                                        <div class="answer">
-                                            <label class="radio">
-                                                <input type="radio" name="years" value="Да">
-                                                <span class="icn"></span>
-                                                <span class="text">Да</span>
-                                            </label>
-                                            <label class="radio">
-                                                <input type="radio" name="years" value="Нет">
-                                                <span class="icn"></span>
-                                                <span class="text">Нет</span>
-                                            </label>
-                                        </div>
-                                        <button class="btn btn-default get-answer">Ответить</button>
-                                    </div>
-                                    <div class="question" data-question="2">
-                                        <p class="title">Как у вас дела?</p>
-                                        <div class="answer">
-                                            <label class="radio">
-                                                <input type="radio" name="q2" value="Отлично, мне же 35!">
-                                                <span class="icn"></span>
-                                                <span class="text">Отлично, мне же > 35!</span>
-                                            </label>
-                                            <label class="radio">
-                                                <input type="radio" name="q2" value="Нормально">
-                                                <span class="icn"></span>
-                                                <span class="text">Нормально</span>
-                                            </label>
-                                            <label class="radio">
-                                                <input type="radio" name="q2" value="Плохо">
-                                                <span class="icn"></span>
-                                                <span class="text">Плохо</span>
-                                            </label>
-                                        </div>
-                                        <button class="btn btn-default get-answer">Ответить</button>
-                                    </div>
-                                    <div class="question" data-question="3">
-                                        <p class="title">Вам нужен совет?</p>
-                                        <div class="answer">
-                                            <label class="radio">
-                                                <input type="radio" name="q3" value="Да">
-                                                <span class="icn"></span>
-                                                <span class="text">Да</span>
-                                            </label>
-                                            <label class="radio">
-                                                <input type="radio" name="q3" value="Не знаю">
-                                                <span class="icn"></span>
-                                                <span class="text">Не знаю</span>
-                                            </label>
-                                            <label class="radio">
-                                                <input type="radio" name="q3" value="Нет">
-                                                <span class="icn"></span>
-                                                <span class="text">Нет</span>
-                                            </label>
-                                        </div>
-                                        <button class="btn btn-default get-answer">Ответить</button>
-                                    </div>
-                                    <div class="question total">
-                                        <p class="title">Спасибо за Ваши ответы!</p>
-                                    </div>
-                                </div>
-                                <a href="#" class="col-xs-6 article-block gray">
+                                <a href="https://womenfirst.ru/stati/beremennost/planirovanie_beremennosti/" class="col-xs-6 article-block white">
                                     <svg class="icon icon-book-bulb"><use xlink:href="#icon-book-bulb"></use></svg>
-                                    <p class="title sm">Узнайте как улучшить самочувствие если наступила менопауза?</p>
+                                    <p class="title">всё о планировании беременности</p>
+                                </a>
+                                <a href="https://womenfirst.ru/stati/beremennost/simptomy_beremennosti_na_rannikh_srokakh/" class="col-xs-6 article-block gray">
+                                    <svg class="icon icon-book-bulb"><use xlink:href="#icon-book-bulb"></use></svg>
+                                    <p class="title sm">Первые признаки беременности на ранних сроках</p>
                                 </a>
                             </div>
-                            <a href="#" class="col-xs-12 article-block large">
-                                <div class="thumbnail" style="background: url('img/article1.jpg');"></div>
+                            <a href="https://womenfirst.ru/stati/beremennost/kak_vesti_sebya_vo_vremya_beremennosti/" class="col-xs-12 article-block large">
+                                <div class="thumbnail" style="background: url('img/article7.jpg');"></div>
                                 <svg class="icon icon-book-bulb"><use xlink:href="#icon-book-bulb"></use></svg>
-                                <p class="title">Как сохранить красоту и здоровье после 45 лет?</p>
+                                <p class="title">Как вести себя во время беременности?</p>
                                 <span class="read-more">читать статью</span>
                             </a>
                         </div>
@@ -126,57 +65,57 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-xs-12 articles-left">
-                        <a href="#" class="col-xs-12 article-block large">
-                            <div class="thumbnail" style="background: url('img/article2.jpg');"></div>
+                        <a href="https://womenfirst.ru/stati/beremennost/naslazhdaytes_svoey_beremennostyu/" class="col-xs-12 article-block large">
+                            <div class="thumbnail" style="background: url('img/article8.jpg');"></div>
                             <svg class="icon icon-book-bulb"><use xlink:href="#icon-book-bulb"></use></svg>
-                            <p class="title">Что делать, если появились признаки менопаузы?</p>
+                            <p class="title">наслаждайтесь своей беременностью</p>
                             <span class="read-more">читать статью</span>
                         </a>
-                        <a href="#" class="col-xs-12 article-block full gray">
+                        <a href="https://womenfirst.ru/voprosy/beremennost/" class="col-xs-12 article-block full gray">
                             <svg class="icon icon-message"><use xlink:href="#icon-message"></use></svg>
-                            <p class="title">К какому врачу мне идти, если мне кажется, что начался климакс?</p>
-                            <p class="description">Здоровьем женщины в период климактерия занимаются сразу три специалиста — гинеколог, эндокринолог и маммолог ...</p>
+                            <p class="title">У меня не получается забеременеть. неужели у меня бесплодие?</p>
+                            <p class="description">О бесплодии можно говорить только после года регулярной половой жизни без контрацепции. Регулярной - это как минимум один половой акт в неделю. Бесплодие может быть как женским, так и мужским ...</p>
                         </a>
                     </div>
                     <div class="col-md-6 col-xs-12 articles-right">
                         <div class="article-container">
-                            <a href="#" class="col-xs-6 article-block gray">
-                                <svg class="icon icon-doc-pen"><use xlink:href="#icon-doc-pen"></use></svg>
-                                <p class="title">тест на определение менопаузы</p>
+                            <a href="https://womenfirst.ru/servisy/klimaks/kalory-calc/" class="col-xs-6 article-block gray">
+                                <svg class="icon icon-m-calendar"><use xlink:href="#icon-m-calendar"></use></svg>
+                                <p class="title">Калькулятор суточной нормы калорий </p>
                             </a>
-                            <a href="#" class="col-xs-6 article-block white">
+                            <a href="https://womenfirst.ru/stati/beremennost/temperatura_pri_beremennosti_chto_delat/" class="col-xs-6 article-block white">
                                 <svg class="icon icon-book-bulb"><use xlink:href="#icon-book-bulb"></use></svg>
-                                <p class="title sm">Женская интимная гигиена: мифы и реальность</p>
+                                <p class="title sm">Высокая температура во время беременности. Что делать?</p>
                             </a>
                         </div>
-                        <a href="#" class="col-xs-12 article-block large">
-                            <div class="thumbnail" style="background: url('img/article3.jpg');"></div>
-                            <svg class="icon icon-play-change"><use xlink:href="#icon-play-change"></use></svg>
-                            <p class="title">Симптомы климакса</p>
-                            <span class="read-more">смотреть видео</span>
+                        <a href="https://womenfirst.ru/stati/beremennost/gormonalnye_problemy_i_besplodie/" class="col-xs-12 article-block large">
+                            <div class="thumbnail" style="background: url('img/article9.jpg');"></div>
+                            <svg class="icon icon-book-bulb"><use xlink:href="#icon-book-bulb"></use></svg>
+                            <p class="title">Гормональные проблемы и бесплодие</p>
+                            <span class="read-more">читать статью</span>
                         </a>
                     </div>
                 </div>
                 <div class="materials">
                     <a href="#" class="col-md-3 col-xs-6 material-block maroon">
-                        <span class="count">54</span>
+                        <span class="count">34</span>
                         <svg class="icon icon-book-bulb"><use xlink:href="#icon-book-bulb"></use></svg>
                         <span class="name">Статьи</span>
                     </a>
                     <a href="#" class="col-md-3 col-xs-6 material-block burgundy">
-                        <span class="count">12</span>
+                        <span class="count">8</span>
                         <svg class="icon icon-m-calendar"><use xlink:href="#icon-m-calendar"></use></svg>
                         <span class="name">Сервисов</span>
                     </a>
                     <a href="#" class="col-md-3 col-xs-6 material-block maroon burgundy-sm">
-                        <span class="count">8</span>
+                        <span class="count">3</span>
                         <svg class="icon icon-doc-pen"><use xlink:href="#icon-doc-pen"></use></svg>
-                        <span class="name">Тестов</span>
+                        <span class="name">Теста</span>
                     </a>
                     <a href="#" class="col-md-3 col-xs-6 material-block burgundy maroon-sm">
-                        <span class="count">4</span>
+                        <span class="count">5</span>
                         <svg class="icon icon-message"><use xlink:href="#icon-message"></use></svg>
-                        <span class="name">Вопроса и ответа</span>
+                        <span class="name">Вопросов и ответов</span>
                     </a>
                     <div class="clearfix"></div>
                 </div>
@@ -273,5 +212,6 @@
                 @@include('templates/_footer.html')
             </div>
 @@include('templates/_end.html', {
-"google_map": "true"
+"google_map": "true",
+"purple_markers": "true"
 })

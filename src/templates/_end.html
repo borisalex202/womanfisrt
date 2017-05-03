@@ -1,4 +1,33 @@
-    @@if ( context.google_map === 'true') {<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIfMx0nIiIGL1ZR1xqQm1Br8DN665cfN8&callback" async defer></script>}
+    @@if ( context.google_map === 'true') {
+    <script>
+        var markers = [];
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIfMx0nIiIGL1ZR1xqQm1Br8DN665cfN8&callback" async defer></script>
+    }
+    @@if ( context.pink_markers === 'true') {
+    <script>
+        $(window).on('load', function () {
+            setTimeout(function () {
+                for (var j = 0; j < markers.length; j++) {
+                    console.log(markers[j]);
+                    markers[j].setIcon('img/themes/pink/marker.svg');
+                }
+            }, 1);
+        });
+    </script>
+    }
+    @@if ( context.purple_markers === 'true') {
+    <script>
+        $(window).on('load', function () {
+            setTimeout(function () {
+                for (var j = 0; j < markers.length; j++) {
+                    console.log(markers[j]);
+                    markers[j].setIcon('img/themes/purple/marker.svg');
+                }
+            }, 1);
+        });
+    </script>
+    }
     <script src="js/external.js"></script>
     <script src="js/internal.js"></script>
     </div>

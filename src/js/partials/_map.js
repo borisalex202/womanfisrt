@@ -1,4 +1,5 @@
-var markers = [
+var map;
+var markersArray = [
     {
         title: 'МЦ “Ферти Мед”',
         description: 'Для записи на прием, позвоните по указанному телефону. Обязательно уточните, работает клиника по ОМС или ДМС полисам или организован платный режим.',
@@ -140,14 +141,14 @@ function initMap() {
         mapTypeControl: false,
         styles: stylesArray
     };
-    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
     var infoWindow = new google.maps.InfoWindow({
         maxWidth: 480
     });
 
-    for (var i = 0; i < markers.length; i++) {
-        var data = markers[i];
+    for (var i = 0; i < markersArray.length; i++) {
+        var data = markersArray[i];
         var marker = new google.maps.Marker({
             position: {lat: data.lat, lng: data.lng},
             map: map,
@@ -155,6 +156,7 @@ function initMap() {
             title: data.title,
             zIndex: data.zIndex
         });
+        markers.push(marker);
         (function (marker, data) {
             google.maps.event.addListener(marker, 'click', function () {
                 infoWindow.setContent('<div class="map-description">' +

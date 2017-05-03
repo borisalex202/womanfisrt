@@ -28,9 +28,9 @@
       font-size: 48px;
       border: 0;
       border-bottom: 2px solid #eee;
-      color: #c1c1c1;
       padding-right: 45px;
       margin-bottom: 40px;
+      color: #000;
       @include placeholder{
         font-size: 48px;
         line-height: 60px;
@@ -87,6 +87,12 @@
           font-size: 18px;
           line-height: 20px;
         };
+      }
+    }
+    &.menu {
+      .btn {
+        font-size: 12px;
+        letter-spacing: 1px;
       }
     }
     ul {

@@ -93,13 +93,24 @@
           border: 0;
           z-index: 9;
           pointer-events: all;
+
+          &:hover {
+            .icon {
+              color: #fff;
+            }
+          }
+          .icon {
+            &:hover {
+              color: #fff;
+            }
+          }
         }
         &-input {
           position: absolute;
           top: 0;
-          left: 0;
           right: 0;
           width: 100%;
+          max-width: 324px;
 
           input {
             position: relative;
@@ -172,13 +183,29 @@
         margin: 0 -1px 0 0;
         letter-spacing: 1.3px;
         line-height: 18px;
+        width: 25%;
 
         .icon {
           margin-left: 40px;
         }
       }
       @media (max-width: 1440px) {
-        padding-left: 35px;
+        padding-left: 30px;
+
+        .go {
+          width: 25.6%;
+
+          .icon {
+            margin-left: 13px;
+          }
+        }
+      }
+      @media (min-width: 991px) {
+        .go {
+          letter-spacing: 0.5px;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
       }
       @media (min-width: $screen-lg) {
         .search {
@@ -224,7 +251,7 @@
           &-input {
             position: absolute;
             right: 0;
-            width: calc(1440px - 324px);
+            width: calc(1440px - 360px);
             pointer-events: none;
 
             input {
@@ -239,6 +266,10 @@
               @include box-shadow(inset 0 0 20px 0 rgba(0,0,0,.12));
             }
           }
+        }
+        .go {
+          letter-spacing: 1px;
+          padding-left: 25px;
         }
       }
       @media (max-width: $screen-md-max) {
@@ -270,7 +301,7 @@
         }
         .search {
           &-block {
-            width: 100%;
+            width: calc(75% - 40px);
             margin: 0;
             position: relative;
             pointer-events: none;
@@ -608,6 +639,65 @@
 .main_banner {
   position: relative;
 
+  &.cycle,
+  &.pregnancy {
+   .container {
+     padding-top: 120px;
+     padding-left: 120px;
+
+     .title {
+       font-size: 54px;
+       line-height: normal;
+       margin-bottom: 0;
+       letter-spacing: inherit;
+     }
+     .description {
+       font-size: 54px;
+       line-height: normal;
+       padding-left: 0;
+
+       span {
+         padding-left: 0;
+
+         &:first-child {
+           padding-left: 0;
+         }
+         &:last-child {
+           padding-left: 0;
+         }
+       }
+     }
+     @media (max-width: $screen-sm-max) {
+       padding-top: 90px;
+       padding-left: 35px;
+
+       .title,
+       .description {
+         font-size: 34px;
+       }
+     }
+     @media (max-width: 700px) {
+       padding-top: 30px;
+
+       .title,
+       .description {
+         font-size: 25px;
+       }
+     }
+    }
+  }
+  &.add_mobile {
+    @media (max-width: 700px) {
+      height: calc(100vh - 160px);
+
+      img {
+        width: auto;
+        max-height: 100%;
+        max-width: none;
+        height: inherit;
+      }
+    }
+  }
   .container {
     position: absolute;
     top: 0;
@@ -625,6 +715,9 @@
       text-transform: uppercase;
       color: #fff;
       margin-bottom: 30px;
+      position: relative;
+      left: -100%;
+      @include animation(title-animate 6s forwards);
     }
     .description {
       font-size: 58px;
@@ -637,6 +730,19 @@
       span {
         padding-left: 200px;
         display: block;
+
+        &:first-child {
+          position: relative;
+          left: -100%;
+          padding-left: 80px;
+          @include animation(title-animate 6s 1s forwards);
+        }
+        &:last-child {
+          position: relative;
+          left: -100%;
+          padding-left: 200px;
+          @include animation(title-animate 6s 1.5s forwards);
+        }
       }
     }
     .icon-play {
@@ -698,6 +804,13 @@
 
         span {
           padding-left: 0;
+
+          &:first-child {
+            padding-left: 0;
+          }
+          &:last-child {
+            padding-left: 0;
+          }
         }
       }
       .icon-play {

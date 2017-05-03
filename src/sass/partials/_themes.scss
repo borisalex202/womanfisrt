@@ -1,0 +1,456 @@
+.pink {
+  a {
+    &:hover {
+      color: $second-color-pink;
+    }
+  }
+  .btn {
+    &-default {
+      background-color: $btn-default-bg-pink;
+      border: 2px solid $btn-default-border-pink;
+
+      &:hover,
+      &.hover {
+        color: #fff;
+        background-color: $btn-default-bg-hover-pink;
+        border-color: $btn-default-bg-hover-pink;
+      }
+      &:focus,
+      &:active,
+      &:active:hover {
+        background-color: $btn-default-bg-hover-pink;
+        border-color: $btn-default-bg-hover-pink;
+      }
+      &.active {
+        &:hover {
+          background-color: $btn-default-bg-hover-pink;
+          border-color: $btn-default-bg-hover-pink;
+        }
+      }
+    }
+    &-primary {
+      background-color: $btn-primary-bg-pink;
+      border: 2px solid $btn-primary-border-pink;
+
+      &:hover,
+      &.hover {
+        color: #fff;
+        background-color: $btn-primary-bg-hover-pink;
+        border-color: $btn-primary-bg-hover-pink;
+      }
+      &:focus,
+      &:active,
+      &:active:hover {
+        background-color: $btn-primary-bg-hover-pink;
+        border-color: $btn-primary-bg-hover-pink;
+      }
+      &.active {
+        background-color: $btn-primary-bg-hover-pink;
+        border-color: $btn-primary-bg-hover-pink;
+
+        &:hover {
+          background-color: $btn-primary-bg-hover-pink;
+          border-color: $btn-primary-bg-hover-pink;
+        }
+      }
+    }
+  }
+  .jspVerticalBar {
+    .jspDrag {
+      background: $second-color-pink;
+    }
+  }
+  .radio {
+    .icn {
+      border: 2px solid $second-color-pink;
+
+      &:after {
+        background: $second-color-pink;
+      }
+    }
+  }
+  .jq-selectbox {
+    &__dropdown {
+      ul {
+        li {
+          &:hover {
+            background: initial;
+            color: $second-color-pink;
+          }
+          &.selected {
+            background: initial;
+            color: $second-color-pink;
+          }
+        }
+      }
+    }
+    &__trigger {
+      background: url('../img/themes/pink/arrow-mini-up.svg') center no-repeat;
+      background-size: 12px 10px;
+    }
+  }
+  .icon {
+    &-menu {
+      &.active,
+      &:hover {
+        background: $second-color-pink;
+      }
+    }
+    &-m-calendar,
+    &-doc-pen,
+    &-book-bulb,
+    &-message,
+    &-play {
+      color: $second-color-pink;
+    }
+  }
+  .map {
+    &-description {
+      &-area {
+        > div:nth-of-type(3) {
+          background: url("../img/themes/pink/cross-pink.svg") no-repeat;
+          background-size: cover;
+        }
+      }
+      a {
+        text-decoration: underline;
+        color: $second-color-pink;
+      }
+    }
+  }
+  .article {
+    &-block {
+      &:after {
+        background: $second-color-pink;
+      }
+      &.large {
+        .read-more {
+          border-bottom: 2px solid $second-color-pink;
+        }
+        &:hover {
+          .read-more {
+            border-bottom: 2px solid $second-color-pink;
+          }
+        }
+      }
+      @media (max-width: $screen-sm-max) {
+        &-block {
+          &.large {
+            .read-more {
+              border-bottom: 3px solid $second-color-pink;
+            }
+          }
+        }
+      }
+    }
+  }
+  .material {
+    &-block {
+      &:hover {
+        .icon {
+          color: #fff;
+          @include opacity(1);
+        }
+      }
+
+      .icon {
+        color: #fed7e9;
+      }
+      @each $material, $color in $materials-colors-pink {
+        &.#{$material} {
+          background: $color;
+        }
+        &.#{$material}-sm {
+          @media (min-width: 700px) and (max-width: $screen-sm-max) {
+            background: $color !important;
+          }
+        }
+      }
+    }
+  }
+  .site {
+    &-header {
+      &-bottom {
+        ul {
+          li {
+            a {
+              &:hover {
+                color: $second-color-pink;
+              }
+            }
+          }
+        }
+      }
+      &-fixed {
+        ul {
+          li {
+            a {
+              &:hover {
+                color: $second-color-pink;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-footer {
+      ul {
+        li {
+          a {
+            &:hover {
+              color: $second-color-pink;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  .present-block {
+    background: $main-color-pink;
+  }
+  .search {
+    &-icon {
+      &:hover {
+        background: $second-color-pink;
+      }
+    }
+  }
+  .checkbox {
+    .icn {
+
+      &:after {
+        background: url('../img/themes/pink/check.svg') center no-repeat;
+        background-size: 100%;
+      }
+    }
+  }
+}
+.purple {
+  a {
+    &:hover {
+      color: $second-color-purple;
+    }
+  }
+  .btn {
+    &-default {
+      background-color: $btn-default-bg-purple;
+      border: 2px solid $btn-default-border-purple;
+
+      &:hover,
+      &.hover {
+        color: #fff;
+        background-color: $btn-default-bg-hover-purple;
+        border-color: $btn-default-bg-hover-purple;
+      }
+      &:focus,
+      &:active,
+      &:active:hover {
+        background-color: $btn-default-bg-hover-purple;
+        border-color: $btn-default-bg-hover-purple;
+      }
+      &.active {
+        &:hover {
+          background-color: $btn-default-bg-hover-purple;
+          border-color: $btn-default-bg-hover-purple;
+        }
+      }
+    }
+    &-primary {
+      background-color: $btn-primary-bg-purple;
+      border: 2px solid $btn-primary-border-purple;
+
+      &:hover,
+      &.hover {
+        color: #fff;
+        background-color: $btn-primary-bg-hover-purple;
+        border-color: $btn-primary-bg-hover-purple;
+      }
+      &:focus,
+      &:active,
+      &:active:hover {
+        background-color: $btn-primary-bg-hover-purple;
+        border-color: $btn-primary-bg-hover-purple;
+      }
+      &.active {
+        background-color: $btn-primary-bg-hover-purple;
+        border-color: $btn-primary-bg-hover-purple;
+
+        &:hover {
+          background-color: $btn-primary-bg-hover-purple;
+          border-color: $btn-primary-bg-hover-purple;
+        }
+      }
+    }
+  }
+  .jspVerticalBar {
+    .jspDrag {
+      background: $second-color-purple;
+    }
+  }
+  .radio {
+    .icn {
+      border: 2px solid $second-color-purple;
+
+      &:after {
+        background: $second-color-purple;
+      }
+    }
+  }
+  .jq-selectbox {
+    &__dropdown {
+      ul {
+        li {
+          &:hover {
+            background: initial;
+            color: $second-color-purple;
+          }
+          &.selected {
+            background: initial;
+            color: $second-color-purple;
+          }
+        }
+      }
+    }
+    &__trigger {
+      background: url('../img/themes/purple/arrow-mini-up.svg') center no-repeat;
+      background-size: 12px 10px;
+    }
+  }
+  .icon {
+    &-menu {
+      &.active,
+      &:hover {
+        background: $second-color-purple;
+      }
+    }
+    &-m-calendar,
+    &-doc-pen,
+    &-book-bulb,
+    &-message,
+    &-play {
+      color: $second-color-purple;
+    }
+  }
+  .map {
+    &-description {
+      &-area {
+        > div:nth-of-type(3) {
+          background: url("../img/themes/purple/cross-purple.svg") no-repeat;
+          background-size: cover;
+        }
+      }
+      a {
+        text-decoration: underline;
+        color: $second-color-purple;
+      }
+    }
+  }
+  .article {
+    &-block {
+      &:after {
+        background: $second-color-purple;
+      }
+      &.large {
+        .read-more {
+          border-bottom: 2px solid $second-color-purple;
+        }
+        &:hover {
+          .read-more {
+            border-bottom: 2px solid $second-color-purple;
+          }
+        }
+      }
+      @media (max-width: $screen-sm-max) {
+        &-block {
+          &.large {
+            .read-more {
+              border-bottom: 3px solid $second-color-purple;
+            }
+          }
+        }
+      }
+    }
+  }
+  .material {
+    &-block {
+      &:hover {
+        .icon {
+          color: #fff;
+          @include opacity(1);
+        }
+      }
+      .icon {
+        color: #A575B7;
+        @include opacity(1);
+      }
+      @each $material, $color in $materials-colors-purple {
+        &.#{$material} {
+          background: $color;
+        }
+        &.#{$material}-sm {
+          @media (min-width: 700px) and (max-width: $screen-sm-max) {
+            background: $color !important;
+          }
+        }
+      }
+    }
+  }
+  .site {
+    &-header {
+      &-bottom {
+        ul {
+          li {
+            a {
+              &:hover {
+                color: $second-color-purple;
+              }
+            }
+          }
+        }
+      }
+      &-fixed {
+        ul {
+          li {
+            a {
+              &:hover {
+                color: $second-color-purple;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-footer {
+      ul {
+        li {
+          a {
+            &:hover {
+              color: $second-color-purple;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  .present-block {
+    background: $main-color-purple;
+  }
+  .search {
+    &-icon {
+      &:hover {
+        background: $second-color-purple;
+      }
+    }
+  }
+  .checkbox {
+    .icn {
+
+      &:after {
+        background: url('../img/themes/purple/check.svg') center no-repeat;
+        background-size: 100%;
+      }
+    }
+  }
+}

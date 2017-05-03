@@ -1,0 +1,11 @@
+@include keyframes('title-animate')
+{
+  0% {
+    left: -100%;
+    @include opacity(0);
+  }
+  100% {
+    left: 0;
+    @include opacity(1);
+  }
+}
