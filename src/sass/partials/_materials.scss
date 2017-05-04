@@ -98,12 +98,26 @@
   }
   @media (max-width: 700px) {
     &-block {
-      width: 100%;
-      height: 375px;
+      width: 50%;
+      height: 188px;
+      padding: 18px 18px 12px 18px;
 
-      .name {
+      &:nth-child(3) {
+        background: map-get($materials-colors, burgundy);
+      }
+      &:nth-child(4) {
+        background: map-get($materials-colors, maroon);
+      }
+      .count {
         font-size: 18px;
+      }
+      .name {
+        font-size: 12px;
         line-height: 20px;
+      }
+      .icon {
+        max-width: 91px;
+        max-height: 91px;
       }
     }
   }
